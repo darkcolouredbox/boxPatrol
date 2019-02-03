@@ -1,0 +1,1 @@
+[] execVM "boxPatrol\bpUnits.sqf"; // Initialize unit arrays

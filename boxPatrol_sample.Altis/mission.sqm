@@ -1,0 +1,168 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=10;
+	};
+	class Camera
+	{
+		pos[]={13455.872,607.85681,15944.557};
+		dir[]={0.17581193,-0.5807631,0.79486966};
+		up[]={0.12542416,0.81407088,0.56706107};
+		aside[]={0.97640836,-7.354538e-008,-0.2159643};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"A3_Modules_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=2;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=887353;
+class ScenarioData
+{
+	author="bawks";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=6;
+		minute=-23;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=6;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12856.161,85.473152,16741.264};
+						angles[]={0,3.5112092,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=1;
+					type="B_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12850.553,87.871239,16699.914};
+				angles[]={6.244544,0,6.249867};
+			};
+			init="call{[this,125,west,1,40,4,1,25,4,0,2,0] execVM ""boxPatrol\bpInit.sqf"";}";
+			id=3;
+			type="Logic";
+			atlOffset=7.6293945e-006;
+		};
+		class Item2
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12639.717,33.978001,16375.328};
+				angles[]={6.244544,0,6.249867};
+			};
+			init="call{[this,200,west,1,25,5,1,25,4,1,1,2] execVM ""boxPatrol\bpInit.sqf"";}";
+			id=5;
+			type="Logic";
+		};
+		class Item3
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14297.77,19.40601,16281.86};
+				angles[]={6.244544,0,6.249867};
+			};
+			init="call{[this,250,west,1,30,3,1,25,4,3,1,2] execVM ""boxPatrol\bpInit.sqf"";}";
+			id=7;
+			type="Logic";
+		};
+		class Item4
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15165.762,17.901016,17289.414};
+				angles[]={6.244544,0,6.249867};
+			};
+			init="call{[this,250,west,1,30,3,1,25,4,3,1,2] execVM ""boxPatrol\bpInit.sqf"";}";
+			id=8;
+			type="Logic";
+		};
+		class Item5
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15188.254,17.896173,17321.123};
+				angles[]={0.0013372133,0,0.0013372133};
+			};
+			init="call{[this,100,west,1,40,2,2,2] execVM ""boxPatrol\bpReinforce.sqf"";}";
+			id=9;
+			type="Logic";
+		};
+	};
+};
